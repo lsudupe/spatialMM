@@ -24,8 +24,6 @@ imgs <- list.files(path = DIR_DATA, pattern = "tissue_hires_image.png", recursiv
 spotfiles <- list.files(path = DIR_DATA, pattern = "tissue_positions_list.csv", recursive = TRUE, full.names = TRUE)
 json <- list.files(path = DIR_DATA, pattern = "scalefactors_json.json", recursive = TRUE, full.names = TRUE)
 name <- dir(path = DIR_DATA)
-#condition <- c("MM", "MM", "MM", "MM", "control", "control", "control", "MM", "MM")
-
 
 ## Create the infotable
 infoTable <- data.frame(samples = samples, imgs = imgs, spotfiles = spotfiles, json = json, 
